@@ -8,6 +8,8 @@ const StyledApp = styled.div`
 `;
 
 export function App() {
+  fetch('https://backendmonorepo.herokuapp.com/api').then(console.log);
+
   return (
     <StyledApp>
       <NxWelcome title="frontend" />
