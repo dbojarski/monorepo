@@ -6,7 +6,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "heroku-postbuild": "nx run backend:build && node dist/apps/backend/main.js"
+    "start:server": "node dist/apps/backend/main.js",
+    "heroku-postbuild": "nx run backend:build"
   },
   "private": true,
   "dependencies": {
